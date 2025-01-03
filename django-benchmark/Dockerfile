@@ -1,5 +1,7 @@
-FROM python:3.11.0-slim
+FROM python:3.11-slim
 
+RUN apt upgrade -y && apt update -y
+RUN apt install -y gcc
 RUN pip install poetry
 RUN poetry config virtualenvs.create false
 

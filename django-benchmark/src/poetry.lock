@@ -350,6 +350,16 @@ files = [
 ]
 
 [[package]]
+name = "uwsgi"
+version = "2.0.28"
+description = "The uWSGI server"
+optional = false
+python-versions = "*"
+files = [
+    {file = "uwsgi-2.0.28.tar.gz", hash = "sha256:79ca1891ef2df14508ab0471ee8c0eb94bd2d51d03f32f90c4bbe557ab1e99d0"},
+]
+
+[[package]]
 name = "zope-event"
 version = "5.0"
 description = "Very basic event publishing system"
@@ -424,4 +434,4 @@ testing = ["coverage[toml]", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "d11847cdfd5864624560cd86e435bec08f1b9f86575056e243c3f901cf67964b"
+content-hash = "134bd1bfcd4b3c54fc7b1d56f8e64942599b523bab8d7f2e520bf3efdd3ba971"

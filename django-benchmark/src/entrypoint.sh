@@ -17,4 +17,7 @@ python manage.py migrate
 # gunicorn --bind 0.0.0.0:8000 -k gthread --threads 17 common.wsgi:application
 
 # マルチプロセス・マルチスレッド
-gunicorn --bind 0.0.0.0:8000 -k gthread --workers 17 --threads 17 common.wsgi:application
+# gunicorn --bind 0.0.0.0:8000 -k gthread --workers 17 --threads 17 common.wsgi:application
+
+# uwsgi
+uwsgi --http 0.0.0.0:8000 --processes=17 --threads=17 --module common.wsgi:application
