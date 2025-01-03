@@ -12,6 +12,7 @@ python manage.py migrate
 
 # マルチプロセス
 # gunicorn --bind 0.0.0.0:8000 -k gevent --workers 17 common.wsgi:application
+gunicorn --bind 0.0.0.0:8000 -k gevent --workers 17 --preload common.wsgi:application
 
 # マルチスレッド
 # gunicorn --bind 0.0.0.0:8000 -k gthread --threads 17 common.wsgi:application
