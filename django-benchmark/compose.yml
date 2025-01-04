@@ -4,6 +4,7 @@ services:
     working_dir: /opt
     tty: true
     entrypoint: ./entrypoint.sh
+    privileged: true
     volumes:
       - ./src:/opt
     ports:
